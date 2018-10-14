@@ -19,17 +19,28 @@ body {
   display: grid;
   grid-template-columns: auto;
   grid-gap: 10px;
-  height: 1000px;
 }
 
 header, .content, footer {
   grid-column: 1/1;
 }
 
+.left {
+  float: left;
+}
+
+.right {
+  float: left;
+}
+
 header nav {
+  position: fixed;
   height: 3.5em;
   background-color: rgba(0, 0, 0, 0.56);
   width: 100%;
+}
+header navmenu {
+  color: #ebebeb;
 }
 
 a {
@@ -84,6 +95,16 @@ input, button, select, textarea {
   padding: 0px;
   border: none;
   outline: none;
+}
+
+@media (max-width: 480px) {
+  .landing h1 {
+    margin: 50% 20%;
+    font-size: 2.8em;
+    line-height: 1.11;
+    text-align: center;
+    color: #f7f7f7;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

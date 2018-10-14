@@ -1,3 +1,7 @@
 @media (max-width: $breakpoint-mobile){
-
+    .landing{
+        h1{
+            @include landing-h1;
+        }
+    }
 }
