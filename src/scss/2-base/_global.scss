@@ -1,0 +1,49 @@
+html{
+	background: $back-gray;
+}
+body {
+	color:$black;
+	line-height:1.6em;
+}
+.grid {
+	display: grid;
+	grid-template-columns: 150px auto 150px;
+	grid-template-rows: repeat(2, 100px);
+	grid-gap: 1em;
+  }
+
+  header{
+	grid-column: 1 / 4;
+  }
+
+a{
+	text-decoration:none;
+	cursor:pointer;
+	color:$link;
+	@include transition-one;
+	&:hover{
+		color:$link-hover;
+	}	
+}
+
+h1,h2,h3,h4,h5,h6 {
+	@include h-text;
+}
+p{
+	@include p-text;
+}
+input,button,select,textarea{
+	@include inputs;
+}
+.btn {
+	background-color: $red; /* Green */
+	cursor:pointer;
+	@include transition-one;
+    color: $link;
+    padding: 10px 30px;
+    text-align: center;
+	display: inline-block;
+	&:hover{
+		background-color: $hover-red;
+	}
+}

@@ -1,0 +1,21 @@
+@mixin fullImage{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+@mixin transition-one {
+    transition: (all 0.15s ease-in-out 0s);
+}
+@mixin h-text {
+    font-family: $font-header;
+    padding: 10px;
+    font-weight: 700;
+}
+@mixin p-text {
+    font-family: $font-text;
+    padding : 10px;
+}
+@mixin inputs {
+    font-family: $font-text;
+    padding: 2px;
+}

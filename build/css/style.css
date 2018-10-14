@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300&subset=cyrillic");
+html {
+  background: #f7f7f7;
+}
+
+body {
+  color: #222222;
+  line-height: 1.6em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: repeat(2, 100px);
+  grid-gap: 1em;
+}
+
+header {
+  grid-column: 1/4;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ebebeb;
+  transition: all 0.15s ease-in-out 0s;
+}
+a:hover {
+  color: #bbbbbb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+}
+
+input, button, select, textarea {
+  font-family: "Roboto", sans-serif;
+  padding: 2px;
+}
+
+.btn {
+  background-color: #c23616;
+  /* Green */
+  cursor: pointer;
+  transition: all 0.15s ease-in-out 0s;
+  color: #ebebeb;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+}
+.btn:hover {
+  background-color: #992c13;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+}
+
+/*# sourceMappingURL=style.css.map */
