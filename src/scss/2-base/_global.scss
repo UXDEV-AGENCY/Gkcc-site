@@ -1,6 +1,6 @@
 html{
-	background: $back-gray;
-	
+	background: $back-gray;	
+	font-family: $font-header;
 
 }
 body {
@@ -9,6 +9,15 @@ body {
 	background: url(../../../build/images/cross.jpeg) no-repeat center center fixed; 
 	@include web-backImage;
 	height: 100vh;
+}
+.pull-right {
+	float:right;
+}
+.pull-left {
+	float:left;
+}
+.hide {
+	display: none;
 }
 
 // grid***********
@@ -20,14 +29,8 @@ body {
 header, .content, footer {
 	grid-column: 1 / 1;
 }
-.left{
-	float: left;
-}
-.right{
-	float: right;
-}
 header{
-	nav{
+	.navheader{
 	@include navbar;
 	width: 100%;
 	&menu{
