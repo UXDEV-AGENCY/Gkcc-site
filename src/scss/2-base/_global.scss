@@ -80,3 +80,19 @@ input,button,select,textarea{
 		@include fullImage;
 	}
 }
+.about, .pastor, .branches {
+	display: grid;
+	grid-template-columns: $grid-layout;
+}
+
+.branches .red{
+	padding: 0 0 15%;
+}
+.placeholder{
+	height: 500px;
+	background-color: $black;
+	color: $gray;
+}
+.title{
+	padding: 0px 8% 0 0;;
+}
