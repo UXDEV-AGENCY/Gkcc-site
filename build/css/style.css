@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300&subset=cyrillic");
+.red {
+  color: #c23616;
+}
+
 html {
   background: #f7f7f7;
   font-family: "Poppins", sans-serif;
@@ -89,7 +93,6 @@ input, button, select, textarea {
 }
 
 .content img {
-  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
@@ -116,11 +119,12 @@ input, button, select, textarea {
 }
 
 .bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
+  width: 30px;
+  height: 3px;
+  background-color: #ebebeb;
   margin: 6px 0;
   transition: 0.4s;
+  border-radius: 5px;
 }
 
 .sidenav {
@@ -157,15 +161,6 @@ input, button, select, textarea {
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-
-  .sidenav a {
-    font-size: 18px;
-  }
-}
 @media (max-width: 480px) {
   .landing h1 {
     margin: 50% 20%;
@@ -173,6 +168,27 @@ input, button, select, textarea {
     line-height: 1.11;
     text-align: center;
     color: #f7f7f7;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 50px auto 20px;
+  }
+  .about .red {
+    grid-column: 2/3;
+  }
+  .about .text {
+    grid-column: 2/3;
+  }
+
+  .pastor {
+    height: 100%;
+    width: 80%;
+    margin: 15%;
+  }
+  .pastor img {
+    width: 100%;
+    height: auto;
   }
 }
 

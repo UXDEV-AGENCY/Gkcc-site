@@ -11,11 +11,12 @@
 }
 
 .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
+    width: 30px;
+    height: 3px;
+    background-color: $link;
     margin: 6px 0;
     transition: 0.4s;
+    border-radius: 5px;
 }
 
 // sideNav 
@@ -52,9 +53,4 @@
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
 }

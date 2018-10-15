@@ -24,3 +24,13 @@ $breakpoint-mobile: 480px;
 $font-header: 'Poppins', sans-serif;
 $font-text: 'Roboto', sans-serif;
 
+.red{
+    color: $red;
+}
+
+// *******************
+// GRID
+// *******************
+
+// mobile*************
+$grid-layout: 50px auto 20px;

@@ -1,5 +1,4 @@
 @mixin fullImage{
-    background-size: cover;
     background-repeat: no-repeat;
     width:100%;
     height:100vh
@@ -41,4 +40,7 @@
     line-height: 1.11;
     text-align: center;
     color: #f7f7f7;
+}
+@mixin grid-second {
+    grid-column: 2 / 3;
 }

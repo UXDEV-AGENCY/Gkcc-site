@@ -4,4 +4,24 @@
             @include landing-h1;
         }
     }
+    .about {
+        display: grid;
+        grid-template-columns: $grid-layout;
+        .red {
+            @include grid-second;
+        }
+        .text{
+            @include grid-second; 
+        }
+    }
+    .pastor{
+        height: 100%;
+        width: 80%;
+        margin: 15%;
+        img{
+            width: 100%;
+            height: auto;
+            
+        }
+    }
 }
