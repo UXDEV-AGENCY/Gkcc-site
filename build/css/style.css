@@ -98,7 +98,7 @@ input, button, select, textarea {
   height: 100vh;
 }
 
-.about, .pastor, .branches, .ministries {
+.about, .pastor, .branches, .ministries, .image-holder, footer {
   display: grid;
   grid-template-columns: 50px auto 20px;
 }
@@ -122,15 +122,30 @@ input, button, select, textarea {
   padding: 3.2em 3.2em 4.2em 2em;
 }
 
-.image-holder {
-  grid-template-columns: auto auto auto auto auto;
-}
-.image-holder .black-back {
+.img-holder .black-back {
   background-color: #222222;
-  height: 22em;
 }
-.image-holder img {
-  height: 0;
+.img-holder img.img-quote {
+  height: 0%;
+}
+
+.ministry-tab .ministry-holder {
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+}
+.ministry-tab .ministry-holder .ministry-img img {
+  height: 0%;
+}
+
+footer {
+  background-color: #222222;
+  color: #ebebeb;
+}
+footer .contact-us {
+  padding: 3em 0;
+}
+footer .grace {
+  padding: 0;
 }
 
 * {
@@ -205,6 +220,11 @@ input, button, select, textarea {
     color: #f7f7f7;
   }
 
+  .vision {
+    grid-column: 2/3;
+    padding: 2em 0 4em;
+  }
+
   .about .red {
     grid-column: 2/3;
   }
@@ -244,7 +264,18 @@ input, button, select, textarea {
   }
   .ministries .header-quote {
     text-align: center;
-    padding: 4em 0;
+    padding: 2em 0 4em;
+  }
+
+  .ministry-tab {
+    grid-column: 2/3;
+  }
+  .ministry-tab .ministry-holder {
+    grid-column: 2/3;
+  }
+
+  footer .contact-us, footer .grace {
+    grid-column: 2/3;
   }
 }
 

@@ -4,6 +4,13 @@
             @include landing-h1;
         }
     }
+// all grid-secons includes
+    .vision{
+        @include grid-second;
+        padding: 2em 0 4em;
+
+    }
+
     .about {
         .red {
             @include grid-second;
@@ -40,13 +47,24 @@
         }
     }
     .ministries{
-        padding: 4em 0 ;
+        padding: 4em 0;
         .red, .img-holder, .header-quote {
             @include grid-second;
         }
         .header-quote{
             text-align: center;
-            padding: 4em 0;
+            padding: 2em 0 4em;
+        }
+    }
+    .ministry-tab{
+        @include grid-second;
+        .ministry-holder{
+            @include grid-second;
+        }
+    }
+    footer{
+        .contact-us, .grace{
+            @include grid-second;
         }
     }
 }
