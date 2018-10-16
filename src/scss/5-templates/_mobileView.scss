@@ -40,13 +40,13 @@
         }
     }
     .ministries{
-        padding: 3em 0 ;
-        .red {
+        padding: 4em 0 ;
+        .red, .img-holder, .header-quote {
             @include grid-second;
         }
         .header-quote{
-            @include grid-second;
             text-align: center;
+            padding: 4em 0;
         }
     }
 }

@@ -122,6 +122,17 @@ input, button, select, textarea {
   padding: 3.2em 3.2em 4.2em 2em;
 }
 
+.image-holder {
+  grid-template-columns: auto auto auto auto auto;
+}
+.image-holder .black-back {
+  background-color: #222222;
+  height: 22em;
+}
+.image-holder img {
+  height: 0;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -226,14 +237,14 @@ input, button, select, textarea {
   }
 
   .ministries {
-    padding: 3em 0;
+    padding: 4em 0;
   }
-  .ministries .red {
+  .ministries .red, .ministries .img-holder, .ministries .header-quote {
     grid-column: 2/3;
   }
   .ministries .header-quote {
-    grid-column: 2/3;
     text-align: center;
+    padding: 4em 0;
   }
 }
 
