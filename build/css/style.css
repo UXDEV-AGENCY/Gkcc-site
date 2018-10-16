@@ -98,7 +98,7 @@ input, button, select, textarea {
   height: 100vh;
 }
 
-.about, .pastor, .branches {
+.about, .pastor, .branches, .ministries {
   display: grid;
   grid-template-columns: 50px auto 20px;
 }
@@ -223,6 +223,17 @@ input, button, select, textarea {
   }
   .branches .branch-image img {
     height: 0%;
+  }
+
+  .ministries {
+    padding: 3em 0;
+  }
+  .ministries .red {
+    grid-column: 2/3;
+  }
+  .ministries .header-quote {
+    grid-column: 2/3;
+    text-align: center;
   }
 }
 

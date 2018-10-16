@@ -39,4 +39,14 @@
             }
         }
     }
+    .ministries{
+        padding: 3em 0 ;
+        .red {
+            @include grid-second;
+        }
+        .header-quote{
+            @include grid-second;
+            text-align: center;
+        }
+    }
 }

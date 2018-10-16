@@ -80,7 +80,7 @@ input,button,select,textarea{
 		@include fullImage;
 	}
 }
-.about, .pastor, .branches {
+.about, .pastor, .branches, .ministries {
 	display: grid;
 	grid-template-columns: $grid-layout;
 }
