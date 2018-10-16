@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300&subset=cyrillic");
 .red {
-  color: #c23616;
+  color: #a71818;
 }
 
 html {
@@ -79,7 +79,7 @@ input, button, select, textarea {
 }
 
 .btn {
-  background-color: #c23616;
+  background-color: #a71818;
   /* Green */
   cursor: pointer;
   transition: all 0.15s ease-in-out 0s;
@@ -108,13 +108,18 @@ input, button, select, textarea {
 }
 
 .placeholder {
-  height: 500px;
   background-color: #222222;
   color: #ebebeb;
+  margin: 10% 0px;
 }
 
 .title {
   padding: 0px 8% 0 0;
+}
+
+.quotes {
+  background-color: #a71818;
+  padding: 3.2em 3.2em 4.2em 2em;
 }
 
 * {
@@ -215,6 +220,9 @@ input, button, select, textarea {
   }
   .branches .branch-holders {
     grid-column: 2/3;
+  }
+  .branches .branch-image img {
+    height: 0%;
   }
 }
 

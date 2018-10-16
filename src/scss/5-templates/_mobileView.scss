@@ -33,5 +33,10 @@
         .branch-holders{
             @include grid-second;
         }
+        .branch-image{
+            img{
+                height: 0%;
+            }
+        }
     }
 }

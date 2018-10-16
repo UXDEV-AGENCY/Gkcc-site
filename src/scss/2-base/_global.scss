@@ -75,8 +75,8 @@ input,button,select,textarea{
 		background-color: $hover-red;
 	}
 }
-.content{
-	img{
+.content {
+	img {
 		@include fullImage;
 	}
 }
@@ -89,10 +89,16 @@ input,button,select,textarea{
 	padding: 0 0 15%;
 }
 .placeholder{
-	height: 500px;
 	background-color: $black;
 	color: $gray;
+	margin: 10% 0px;
 }
 .title{
 	padding: 0px 8% 0 0;;
+}
+
+.quotes{
+	background-color: $red;
+	padding: 3.2em 3.2em 4.2em 2em
+
 }
